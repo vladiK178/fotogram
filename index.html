@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./img/favicon_fotogram.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Fotogram</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="init()">
+    <main>
+      <header>
+        <img src="./img/favicon_fotogram.png" alt="gram" />
+        <p>Fotogram</p>
+      </header>
+      <h1>Your personal photo album</h1>
+      <div id="gallery"></div>
+      <div class="modal" id="imageModal">
+        <img id="modalImage" src="" alt="enlarge img" />
+        <div class="navButtons">
+          <button id="prevButton" onclick="prevImage()">←</button>
+          <button id="nextButton" onclick="nextImage()">→</button>
+        </div>
+        <button id="closeModal" onclick="closeModal()">X</button>
+      </div>
+    </main>
+    <footer>
+      <a class="downline"><p>© 2024 Fotogram</p></a>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
