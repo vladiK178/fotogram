@@ -15,6 +15,7 @@ let myImgs = [
 
 let currentIndex = 0;
 
+// oder render ()
 function init() {
   const gallery = document.getElementById("gallery");
   let html = "";
